@@ -1,0 +1,154 @@
+header .container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container h2 {
+  color: #3AA6B9;
+  font-size: 29px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+header .container nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+header .container nav a {
+  color: #969696;
+}
+header .container nav button {
+  padding: 12px 24px;
+  background: #3AA6B9;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+section {
+  height: calc(100vh - 100px);
+  min-height: 600px;
+}
+section .container {
+  height: 100%;
+  display: flex;
+}
+section .container aside {
+  height: 100%;
+  width: 300px;
+  border-right: 1px solid #969696;
+}
+section .container aside nav {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 6px;
+  gap: 32px;
+  height: 100%;
+}
+section .container aside nav a {
+  color: #969696;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.1px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+section .container aside nav a img {
+  width: 28px;
+  height: 28px;
+}
+section .container aside nav a #prof-img {
+  width: 32px;
+  height: 32px;
+}
+section .container aside nav a#exit {
+  margin-top: auto;
+}
+section .container main {
+  max-width: 750px;
+  flex: 1;
+  overflow: scroll;
+}
+section .container main::-webkit-scrollbar {
+  display: none;
+}
+section .container main nav {
+  padding: 10px;
+  display: flex;
+  gap: 16px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-direction: horizontal;
+}
+section .container main nav::-webkit-scrollbar {
+  display: none;
+}
+section .container main nav .story-box {
+  min-width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid red;
+  cursor: pointer;
+}
+section .container main nav .story-box img {
+  transform: translate(-3px, -3px);
+  width: 110%;
+  height: 110%;
+}
+section .container main .post-wrapper {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+section .container main .post-wrapper .post {
+  width: 520px;
+}
+section .container main .post-wrapper .post .post-info {
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.433);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .container main .post-wrapper .post .post-info .info-profile {
+  flex: 1;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+section .container main .post-wrapper .post .post-info .info-profile img {
+  min-width: 45px;
+  height: 45px;
+}
+section .container main .post-wrapper .post .post-info .info-profile .title h2 {
+  line-height: 22px;
+  font-size: 17px;
+  font-weight: 500;
+}
+section .container main .post-wrapper .post .post-info .info-profile .title h2 #date {
+  font-size: 15px;
+  color: gray;
+}
+section .container main .post-wrapper .post .post-info .info-profile .title h2 #followLink {
+  color: cornflowerblue;
+}
+section .container main .post-wrapper .post .post-info .info-profile .title p {
+  font-size: 14px;
+  color: gray;
+}
+section .container main .post-wrapper .post .post-info img {
+  max-width: 40px;
+  cursor: pointer;
+}
+section .container main .post-wrapper .post img {
+  width: 100%;
+}
+section .container main .post-wrapper .post video {
+  width: 100%;
+}/*# sourceMappingURL=home.css.map */
